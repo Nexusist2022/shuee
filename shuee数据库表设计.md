@@ -2,7 +2,7 @@
 
 | 名           | 类型    | 长度 | 小数点 | 非空 | 键   | 注释         |
 | ------------ | ------- | ---- | ------ | ---- | ---- | ------------ |
-| book_id      | bigint  | 20   | 0      | 是   | ✔    | 图书号       |
+| book_id      | varchar | 20   | 0      | 是   | ✔    | 图书号       |
 | book_name    | varchar | 20   | 0      | 是   |      | 图书名       |
 | author       | varchar | 15   | 0      | 是   |      | 作者         |
 | introduction | text    | 0    | 0      | 否   |      | 简介         |
@@ -33,7 +33,7 @@
 
 | 名           | 类型    | 长度 | 小数点 | 非空 | 键   | 注释     |
 | ------------ | ------- | ---- | ------ | ---- | ---- | -------- |
-| user_id      | bigint  | 20   | 0      | 是   | ✔    | 用户ID   |
+| user_id      | varchar | 20   | 0      | 是   | ✔    | 用户ID   |
 | user_pwd     | varchar | 15   | 0      | 是   |      | 用户密码 |
 | user_picture | varchar | 200  | 0      | 是   |      | 用户头像 |
 | phone        | int     | 11   | 0      | 是   |      | 电话     |
@@ -43,12 +43,12 @@
 | mail         | varchar | 20   | 0      | 否   |      | 邮箱     |
 | likes        | varchar | 20   | 0      | 否   |      | 收藏     |
 
-5. operate 操作表
+5. comment 评论表
 
-   | 名       | 类型    | 长度 | 小数点 | 非空 | 键   | 注释     |
-   | -------- | ------- | ---- | ------ | ---- | ---- | -------- |
-   | user_id  | bigint  | 20   | 0      | 是   | ✔    | 用户ID   |
-   | book_id  | bigint  | 20   | 0      | 是   | ✔    | 图书号   |
-   | comment  | long    | 2000 | 0      | 是   |      | 用户评论 |
-   | download | varchar | 20   | 0      | 否   |      | 下载     |
-   | likes    | varchar | 20   | 0      | 否   |      | 收藏     |
+   | 名              | 类型    | 长度 | 小数点 | 非空 | 键   | 注释     |
+   | --------------- | ------- | ---- | ------ | ---- | ---- | -------- |
+   | comment_id      | varchar | 20   | 0      | 是   | ✔    | 评论if   |
+   | book_id         | varchar | 20   | 0      | 是   |      | 图书id   |
+   | user_id         | varchar | 20   | 0      | 是   |      | 用户id   |
+   | comment_content | text    | 0    | 0      | 是   |      | 评论内容 |
+   | comment_data    | data    | 0    | 0      | 是   |      | 评论日期 |
