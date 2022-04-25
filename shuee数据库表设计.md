@@ -1,17 +1,18 @@
 1. book_info 图书表
 
-| 名           | 类型    | 长度 | 小数点 | 非空 | 键   | 注释     |
-| ------------ | ------- | ---- | ------ | ---- | ---- | -------- |
-| book_id      | bigint  | 20   | 0      | 是   | ✔    | 图书号   |
-| book_name    | varchar | 20   | 0      | 是   |      | 图书名   |
-| author       | varchar | 15   | 0      | 是   |      | 作者     |
-| introduction | text    | 0    | 0      | 否   |      | 简介     |
-| book_cover   | varchar | 200  | 0      | 是   |      | 图书封面 |
-| publisher    | varchar | 20   | 0      | 是   |      | 出版社   |
-| price        | decimal | 10   | 2      | 是   |      | 价格     |
-| pubdate      | date    | 0    | 0      | 是   |      | 出版时间 |
-| class_id     | int     | 11   | 0      | 是   |      | 分类号   |
-| likes        | int     | 11   | 0      | 否   |      | 收藏     |
+| 名           | 类型    | 长度 | 小数点 | 非空 | 键   | 注释         |
+| ------------ | ------- | ---- | ------ | ---- | ---- | ------------ |
+| book_id      | bigint  | 20   | 0      | 是   | ✔    | 图书号       |
+| book_name    | varchar | 20   | 0      | 是   |      | 图书名       |
+| author       | varchar | 15   | 0      | 是   |      | 作者         |
+| introduction | text    | 0    | 0      | 否   |      | 简介         |
+| book_cover   | varchar | 200  | 0      | 是   |      | 图书封面     |
+| publisher    | varchar | 20   | 0      | 是   |      | 出版社       |
+| size         | decimal | 10   | 2      | 是   |      | 文件大小     |
+| pubdate      | date    | 0    | 0      | 是   |      | 出版时间     |
+| class_id     | int     | 11   | 0      | 是   |      | 分类号       |
+| likes        | int     | 11   | 0      | 否   |      | 收藏         |
+| url          | varchar | 200  | 0      | 否   |      | 图书下载链接 |
 
 2. admin   管理员表
 
@@ -41,3 +42,13 @@
 | birth        | date    | 0    | 0      | 是   |      | 生日     |
 | mail         | varchar | 20   | 0      | 否   |      | 邮箱     |
 | likes        | varchar | 20   | 0      | 否   |      | 收藏     |
+
+5. operate 操作表
+
+   | 名       | 类型    | 长度 | 小数点 | 非空 | 键   | 注释     |
+   | -------- | ------- | ---- | ------ | ---- | ---- | -------- |
+   | user_id  | bigint  | 20   | 0      | 是   | ✔    | 用户ID   |
+   | book_id  | bigint  | 20   | 0      | 是   | ✔    | 图书号   |
+   | comment  | long    | 2000 | 0      | 是   |      | 用户评论 |
+   | download | varchar | 20   | 0      | 否   |      | 下载     |
+   | likes    | varchar | 20   | 0      | 否   |      | 收藏     |
