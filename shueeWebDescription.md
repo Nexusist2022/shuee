@@ -1,3 +1,11 @@
+## 开发学习资料
+
+- [JavaScript Node.js环境连接MySQL_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1tg411P7P8?spm_id_from=333.1007.top_right_bar_window_history.content.click)
+
+- [node 搭建http服务器， 接收前端请求_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1MT4y1e7rX?spm_id_from=333.788.top_right_bar_window_custom_collection.content.click)
+
+  
+
 ## 参考网址地址
 
 - [Book Library - Online Store HTML Template Preview - ThemeForest](http://preview.themeforest.net/item/book-store-library-online-book-store/full_screen_preview/21369136?_ga=2.17131322.2046148649.1650289228-541386298.1650289228)
