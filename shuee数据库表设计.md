@@ -1,3 +1,4 @@
+1. 
 1. book_info 图书表
 
 | 名           | 类型    | 长度 | 小数点 | 非空 | 键   | 注释         |
@@ -13,6 +14,7 @@
 | class_id     | int     | 11   | 0      | 是   |      | 分类号       |
 | likes        | int     | 11   | 0      | 否   |      | 收藏         |
 | url          | varchar | 200  | 0      | 否   |      | 图书下载链接 |
+| download     | int     | 200  | 0      | 否   |      | 下载次数     |
 
 2. admin   管理员表
 
@@ -52,3 +54,12 @@
    | user_id         | varchar | 20   | 0      | 是   |      | 用户id   |
    | comment_content | text    | 0    | 0      | 是   |      | 评论内容 |
    | comment_data    | data    | 0    | 0      | 是   |      | 评论日期 |
+
+6. user_like  用户收藏表
+
+| 名        | 类型    | 长度 | 小数点 | 非空 | 键   | 注释       |
+| --------- | ------- | ---- | ------ | ---- | ---- | ---------- |
+| user_id   | varchar | 20   | 0      | 是   | ✔    | 用户id     |
+| book_id   | varchar | 20   | 0      | 是   | ✔    | 图书id     |
+| book_name | varchar | 20   | 0      | 是   |      | 收藏图书名 |
+| like_data | data    | 0    | 0      | 是   |      | 收藏日期   |
