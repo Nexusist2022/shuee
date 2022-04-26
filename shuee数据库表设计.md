@@ -12,9 +12,9 @@
 | size         | decimal | 10   | 2      | 是   |      | 文件大小     |
 | pubdate      | date    | 0    | 0      | 是   |      | 出版时间     |
 | class_id     | int     | 11   | 0      | 是   |      | 分类号       |
-| likes        | int     | 11   | 0      | 否   |      | 收藏         |
+| favorite     | int     | 11   | 0      | 否   |      | 收藏数       |
 | url          | varchar | 200  | 0      | 否   |      | 图书下载链接 |
-| download     | int     | 200  | 0      | 否   |      | 下载次数     |
+| download     | int     | 200  | 0      | 否   |      | 下载数       |
 
 2. admin   管理员表
 
@@ -43,7 +43,7 @@
 | sex          | varchar | 2    | 0      | 是   |      | 性别     |
 | birth        | date    | 0    | 0      | 是   |      | 生日     |
 | mail         | varchar | 20   | 0      | 否   |      | 邮箱     |
-| likes        | varchar | 20   | 0      | 否   |      | 收藏     |
+| favorite     | varchar | 20   | 0      | 否   |      | 收藏     |
 
 5. comment 评论表
 
@@ -55,11 +55,12 @@
    | comment_content | text    | 0    | 0      | 是   |      | 评论内容 |
    | comment_data    | data    | 0    | 0      | 是   |      | 评论日期 |
 
-6. user_like  用户收藏表
+6. user_favorite  用户收藏表
 
-| 名        | 类型    | 长度 | 小数点 | 非空 | 键   | 注释       |
-| --------- | ------- | ---- | ------ | ---- | ---- | ---------- |
-| user_id   | varchar | 20   | 0      | 是   | ✔    | 用户id     |
-| book_id   | varchar | 20   | 0      | 是   | ✔    | 图书id     |
-| book_name | varchar | 20   | 0      | 是   |      | 收藏图书名 |
-| like_data | data    | 0    | 0      | 是   |      | 收藏日期   |
+| 名            | 类型    | 长度 | 小数点 | 非空 | 键   | 注释               |
+| ------------- | ------- | ---- | ------ | ---- | ---- | ------------------ |
+| user_id       | varchar | 20   | 0      | 是   | ✔    | 用户id             |
+| book_id       | varchar | 20   | 0      | 是   | ✔    | 图书id             |
+| book_name     | varchar | 20   | 0      | 是   |      | 收藏图书名         |
+| favorite_data | data    | 0    | 0      | 是   |      | 收藏日期           |
+| url           | varchar | 255  |        | 否   |      | 收藏图书的原文地址 |
