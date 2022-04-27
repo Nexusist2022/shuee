@@ -1,0 +1,406 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    height: 16em;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    list-style: none;
+    padding: 0;
+}
+/*工具栏布局*/
+nav>.tools{
+    height: 3em;
+    background: white;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: rgb(153, 153, 153);
+}
+
+nav>.tools ul{
+    float: left;
+    margin-left: 5%;
+}
+
+nav>.tools li{
+    float:left;
+    line-height: 3em;
+    margin-right: 1em;
+}
+.person{
+    float: right;
+    background-color: rgb(235, 232, 232);
+    width: 10em;
+    height: 100%;
+    margin-right: 5%;
+}
+
+/*搜索栏布局*/
+.searchDiv{
+    height: 10em;
+    
+}
+
+.searchDiv .tools{
+    height: 5em;
+    line-height: 5em;
+    background-color: white;
+}
+
+.searchDiv .tools .logo{
+    float: left;
+    margin-left: 5%;
+}
+.searchDiv .tools .logo>img{
+    height: 3em;
+    vertical-align: bottom;
+}
+.searchDiv .tools .logo>span{
+    font-size: 2em;
+    line-height: 1em;   
+    vertical-align: bottom;
+
+}
+
+.searchDiv .tools ul{
+    height: 5em;
+    float: right;
+    margin-right: 5%;
+    line-height: 5em;
+    
+}
+
+.searchDiv .tools li{
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 1em;
+    line-height: 1em;
+    vertical-align: bottom;
+}
+.search{
+    line-height: 5em;
+    text-align: center;
+}
+.search input[type='text']{
+    width: 90%;
+    height: 3em;
+    border-radius: 1em;
+}
+
+
+
+
+.mainNav{
+    color: white;
+    height: 3em;
+    background-color: #45B84B;
+}
+.mainNav ul{
+    margin: 0;
+    padding: 0;
+    line-height: 3em;
+    padding-left: 5%; 
+}
+.mainNav ul,.mainNav ul li{
+    float: left;
+
+}
+
+.mainNav ul li{
+    margin-right: 2em;
+}
+
+main{
+
+}
+
+/* 轮播图 */
+.carouselDiagram{
+    background-image: url(../resource/img/index/时钟台灯盆栽.jpg);
+    background-size: auto 100%;
+    height: 30em;
+
+}
+
+/* 网站数据 */
+.websiteData{
+    height: 15em;
+    background-color:white;
+}
+.websiteData ul{
+    padding: 0;
+    margin: 0 0;
+    line-height: 15em;
+}
+.websiteData li{
+    vertical-align: middle;
+    height: 10em;
+    width: 33.3%;
+    display: inline-block;
+    background-color: #bfbfbf;
+    padding: 1em;
+    box-sizing: border-box;
+    background-clip: content-box;
+}
+
+/* 热门图书 */
+.popularBooks{
+    height: 20em;
+    margin: 0 5%;
+    
+}
+.popularBooks header{
+    height: 3em;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #707070;
+}
+.popularBooks header h3{
+    line-height: 3em;
+    display: inline;
+    vertical-align: middle;
+}
+.popularBooks header>ul{
+    float: right;
+    height: 3em;
+    line-height: 3em;
+    padding: 0;
+    margin: 0;
+}
+.popularBooks header>ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: middle;
+    
+}
+
+.popularBooks header>ul .viewMore{
+    color: #8a8a8a;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 1px;
+    padding: .5em 1em;
+    margin-right: 1em;
+}
+
+.popularBooks header>ul .left{
+    height: 2em;
+    width: 2em;
+    background-image: url(../resource/img/index/左.svg);
+}
+.popularBooks header>ul .right{
+    height: 2em;
+    width: 2em;
+    background-image: url(../resource/img/index/右.svg);
+}
+
+.popularBooks section{
+    line-height: 17em;
+}
+.popularBooks section *{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.popularBooks section ul{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.popularBooks section li{
+    display: inline-block;
+    background-color: #bfbfbf;
+    height: 15em;
+    width: 12em;
+    margin-right: 3em;
+    /* border-style: solid;
+    border-width: 1px; */
+    line-height: 15em;
+    vertical-align: middle;
+}
+
+/* 新书发布 */
+.newBooks{
+    height: 60em;
+    margin: 0 5%;
+}
+
+/* 新书发布 分区一*/
+.newBooks .partOne{
+    height: 30em;
+    position: relative;
+    line-height: 25em;
+    box-sizing: border-box;
+    background-clip: content-box;
+    background-color: #bfbfbf;
+    padding: 5em 0;
+}
+.newBooks .partOne img{
+    position: absolute;
+    top: 2em;
+    height: 25em;
+    width: 18em;
+}
+.newBooks .partOne .bookIntroduction{
+    padding: 0;
+    margin: 0;
+    margin-left: 18em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.newBooks .partOne .bookIntroduction li{
+    list-style: none;
+    line-height: 1em;
+    display: block;
+}
+
+/* 新书发布 分区二*/
+.newBooks .partTwo{
+    height: 30em;
+}
+.newBooks .partTwo li{
+    list-style: none;
+}
+.newBooks .partTwo .bookIntroduction{
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 30em;
+    background-color: #bfbfbf;
+}
+.newBooks .partTwo .book ul{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    height: 30em;
+    float: right;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.newBooks .partTwo .book li{
+    float: right;
+    width: 15em;
+    height: 100%;
+    margin-left: 3em;
+    background-color: #bfbfbf;
+}
+
+/* 装饰背景图 */
+.backgroundImg{
+    height: 15em;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(../resource/img/index/时钟台灯盆栽.jpg);
+    margin: 2em 0;
+}
+
+/* 热门作者 */
+.popularAuthor{
+    height: 20em;
+    margin: 0 5%;
+}
+
+.popularAuthor header{
+    height: 3em;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #707070;
+}
+.popularAuthor header h3{
+    line-height: 3em;
+    display: inline;
+    vertical-align: middle;
+}
+.popularAuthor header>ul{
+    float: right;
+    height: 3em;
+    line-height: 3em;
+    padding: 0;
+    margin: 0;
+}
+.popularAuthor header>ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: middle;
+    
+}
+
+.popularAuthor header>ul .viewMore{
+    color: #8a8a8a;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 1px;
+    padding: .5em 1em;
+    margin-right: 1em;
+}
+
+.popularAuthor header>ul .left{
+    height: 2em;
+    width: 2em;
+    background-image: url(../resource/img/index/左.svg);
+}
+.popularAuthor header>ul .right{
+    height: 2em;
+    width: 2em;
+    background-image: url(../resource/img/index/右.svg);
+}
+
+
+.popularAuthor section{
+    height: 15em;
+}
+
+.popularAuthor section *{
+    margin: 0;
+    padding: 0;
+}
+
+.popularAuthor section ul{
+    width: 100%;
+    height: 17em;
+    /* text-align的justify在文本最后一行不生效 */
+    text-align-last: justify;
+    line-height: 12em;
+}
+
+.popularAuthor section li{
+    list-style: none;
+    height:10em;
+    width: 8em;
+    background-color: #bfbfbf;
+    display: inline-block;
+    line-height: 10em;
+    vertical-align: middle;
+}
+
+/* 热门名言 */
+.popularSaying{
+    height: 35em;
+    background-image: url(../resource/img/index/键盘.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 5%;
+}
+.copyright{
+    margin-top: 5em;
+    text-align: center;
+    line-height: 2em;
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    background-color: rgb(70, 67, 67);
+}
+
+
+
+
