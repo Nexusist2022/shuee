@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-* {
+html,body{
     margin: 0;
     padding: 0;
 }
@@ -59,6 +59,8 @@ main{
     /* border: 1px red solid; */
     float: left;
     
+
+    
 }
 
 /* 垂直分割线 */
@@ -96,7 +98,9 @@ main{
     position: absolute;
     margin: auto;
 }
-
+ul{
+    padding: 1em;
+}
 
 ul li {
     list-style: none;
