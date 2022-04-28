@@ -132,6 +132,7 @@ ul li {
 /* 水平分割线 */
 .horizontal_line{
     background:rgb(40,40,40);
+    
     margin: 1em 0;
 
 }
@@ -143,9 +144,7 @@ ul li {
 
 }
 
-button{
-    
-}
+
 
 
 
