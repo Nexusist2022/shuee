@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 3em;
+    background-color: white;
+    box-shadow: rgb(71, 71, 71) 0px 5px 5px;
+}
+nav .logo{
+    float: left;
+    margin-left: 2em;
+    line-height: 3em;
+}
+nav .logo img{
+    vertical-align:middle;
+}
+nav .logo span{
+    color: #404C61;
+    vertical-align:middle;
+    border: solid;
+    border-width: 0 0 2px 0;
+    padding-bottom: .1em;
+}
+nav .tools{
+    margin: 0;
+    margin-right: 2em;
+    height: 3em;
+    width: 10em;
+    float: right;
+}
+nav .tools li{
+    line-height: 3em;
+    list-style: none;
+    margin: 0 0.5em;
+    float: right;
+}
+
+
+
+main{
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255);
+    margin: 0 auto;
+    margin-top:3em;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.247) 2px 2px 5px;
+    
+}
+
+/* 左导航栏 */
+.content-left {
+    width: 10%;
+    height: 25em;
+    /* border: 1px red solid; */
+    float: left;
+    
+}
+
+/* 垂直分割线 */
+.vertical-line{
+    background:rgb(40,40,40);
+    width:0.1em;
+    height:25em;
+    position:relative;/*调整位置*/
+    float:left;/*让此div与前面的并排显示*/
+}
+
+/* 右边区域内容 */
+.content-right {
+    /* border: 1px red solid; */
+    width: 81%;
+    height: 25em;
+    float: left;
+    margin-left: 5em;
+  
+}
+
+.user_pic{
+    
+    height: 6em;
+    width: 100%;
+    position: relative;
+}
+
+/* 头像居中 */
+.user_pic>img{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 1em;
+}
+
+/* 左侧导航栏菜单 */
+.nav-left-menu{
+    /* border: 1px red solid; */
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+.nav-left-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.nav-left-menu ul li:hover{
+    /* width: 6em; */
+    background-color: rgb(69,184,75);
+    margin: 0 1em;
+    border-radius: 5px;
+}
+
+/* 水平分割线 */
+.horizontal_line{
+    background:rgb(40,40,40);
+    margin: 1em 0;
+
+}
+
+.user_info p{
+
+    margin: 1em 0;
+
+
+}
+
+button{
+    
+}
+
+
+
+
+
