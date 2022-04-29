@@ -167,3 +167,11 @@ main{
     display: inline-block;
     color: blue;
 }
+
+/* 版权信息 */
+footer{
+    height: 3em;
+    line-height: 3em;
+    vertical-align: middle;
+    text-align: center;
+}
