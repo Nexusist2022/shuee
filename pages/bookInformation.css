@@ -113,10 +113,16 @@ main{
 .bookComment .comment>header{
     line-height: 3em;
 }
+.bookComment .comment footer{
+    height: 3em;
+}
+.bookComment .comment footer ul{
+    float: right;
+}
 .bookComment .comment footer li{
     list-style: none;
-    float: right;
-    margin-top: 2em;
+    display: inline-block;
+    
 }
 
 .bookComment>footer{
@@ -127,7 +133,8 @@ main{
     height: 3em;
     text-align: end;
     width: 20em;
-    float: right;
+    margin-right: 0;
+    margin-left: auto;
     line-height: 3em;
     border-style: solid;
     border-width: 1px 0 0 0;
@@ -178,6 +185,7 @@ main{
     margin-top: 1em;
 }
 .bookRecommend>footer{
+    
     margin-left: auto;
     margin-right: 0;
     height: 3em;
