@@ -2,7 +2,13 @@ body,html{
     margin: 0;
     padding: 0;
 }
-
+*{
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
 
 nav{
     height: 16em;
@@ -35,6 +41,13 @@ nav>.tools li{
     line-height: 3em;
     margin-right: 1em;
 }
+
+nav .tools li:hover:nth-child(2n+1){
+    color: rgb(147, 148, 147);
+    cursor: pointer;
+}
+
+
 .person{
     float: right;
     background-color: rgb(235, 232, 232);
@@ -115,19 +128,26 @@ nav>.tools li{
 }
 
 .mainNav ul li{
-    margin-right: 2em;
+    width: 5em;
+    text-align: center;
 }
 
-main{
-
+.mainNav ul li:nth-child(1){
+    background-color: darkgreen;
 }
+
+.mainNav ul li:hover{
+    background-color: rgb(23, 151, 44);
+}
+
+
 
 /* 轮播图 */
 .carouselDiagram{
-    background-image: url(../resource/img/index/时钟台灯盆栽.jpg);
-    background-size: auto 100%;
     height: 30em;
-
+    background-image: url("../resource/img/index/notebook-and-coffee-flatlay-picjumbo-com\(1\).jpg");
+    background-size: 100%;
+    background-position: center;
 }
 
 /* 网站数据 */
@@ -205,6 +225,7 @@ main{
 
 .popularBooks section{
     line-height: 17em;
+    overflow: hidden;
 }
 .popularBooks section *{
     padding: 0;
@@ -214,6 +235,7 @@ main{
 .popularBooks section ul{
     white-space: nowrap;
     overflow: hidden;
+    transition: all .5s ease;
 }
 .popularBooks section li{
     display: inline-block;
@@ -226,6 +248,7 @@ main{
     line-height: 15em;
     vertical-align: middle;
 }
+
 
 /* 新书发布 */
 .newBooks{
@@ -358,19 +381,23 @@ main{
 
 .popularAuthor section{
     height: 15em;
+    overflow: hidden;
 }
 
 .popularAuthor section *{
     margin: 0;
     padding: 0;
+    
 }
 
 .popularAuthor section ul{
+    white-space: nowrap;
     width: 100%;
     height: 17em;
     /* text-align的justify在文本最后一行不生效 */
     text-align-last: justify;
     line-height: 12em;
+    transition: all 1s ease;
 }
 
 .popularAuthor section li{
@@ -402,5 +429,30 @@ main{
 }
 
 
+/* 交互效果 */
 
+.popularBooks header>ul .viewMore:hover{
+    color: white;
+    background-color: darkorange;
+    cursor: pointer;
+}
+.popularBooks header>ul .left:hover{
+    cursor: pointer;
+}
+.popularBooks header>ul .right:hover{
+    cursor: pointer;
+}
 
+.popularAuthor header>ul .viewMore:hover{
+    color: white;
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+.popularAuthor header>ul .left:hover{
+    cursor: pointer;
+}
+
+.popularAuthor header>ul .right:hover{
+    cursor: pointer;
+}
