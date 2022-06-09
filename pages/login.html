@@ -6,19 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css" >
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+	</script>
 </head>
 
 <body>
     <nav>
         <div class="logo">
+            <a href="./index.html">
             <img src="../resource/img/logo/书架.svg" alt="ShuEELogo">
             <span><strong>ShuEE.com</strong></span>
+            </a>
         </div>
         <ul class="tools">
-            <li class="about">关于我们</li>
+            <a href="#">
+                <li class="about">关于我们</li>
+            </a>
             <li>|</li>
-            <li class="index">首页</li>
+            <a href="./index.html">
+                <li class="index">首页</li>
+            </a>
         </ul>
     </nav>
     <main>
@@ -27,8 +35,8 @@
             <span><strong>ShuEE.com</strong></span>
         </div>
         <form action="">
-            <input type="text" placeholder="用户名/手机号/邮箱">
-            <input type="text" placeholder="密码">
+            <input type="text"  id="userName" placeholder="用户名/手机号/邮箱">
+            <input type="text" id="userPwd" placeholder="密码">
             <div class="tools">
                 <ul>
                     <li>
@@ -37,15 +45,43 @@
                     <li>
                         |
                     </li>
-                    <li>
-                        注册
-                    </li>
+                    <a href="./regist.html">
+                        <li>
+                            注册
+                        </li>
+                    </a>
                 </ul>
             </div>
-            <input type="submit" value="登录"> 
+            <input type="submit" id="loginButton" value="登录"> 
         </form>
     </main>
     <footer>2022 ALL Rights Reserved By © Book Library</footer>
 </body>
+
+<script>
+    $(document).ready(function(){
+        var loginBtn = $("#loginButton");
+        
+        $("#loginButton").click(
+            ()=>{
+                $.ajax(
+                    {
+                        url:"/Login",
+                        type:"POST",
+                        data:{
+                            userName:$("#userName").val(),
+                            password:$("#userPwd").val()
+                        },
+                        success:function(msg){
+                            alert("登陆成功！");
+                        }                       
+                    }
+                )
+            }
+        )
+
+    })
+
+</script>
 
 </html>

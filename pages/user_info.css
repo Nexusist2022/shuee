@@ -54,7 +54,7 @@ main{
 
 /* 左导航栏 */
 .content-left {
-    width: 10%;
+    width: 10em;
     height: 25em;
     /* border: 1px red solid; */
     float: left;
@@ -75,10 +75,10 @@ main{
 /* 右边区域内容 */
 .content-right {
     /* border: 1px red solid; */
-    width: 81%;
+    /* width: 81%; */
     height: 25em;
-    float: left;
-    margin-left: 5em;
+    /* float: left; */
+    margin-left: 15em;
   
 }
 
@@ -98,11 +98,11 @@ main{
     position: absolute;
     margin: auto;
 }
-ul{
+.content-left .nav-left-menu ul{
     padding: 1em;
 }
 
-ul li {
+.content-left .nav-left-menu ul li {
     list-style: none;
     padding: 1em;
 }
