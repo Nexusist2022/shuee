@@ -3,12 +3,16 @@ body,html{
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 nav{
+    position: fixed;
+    width: 100%;
+    z-index:1;
     height: 3em;
     background-color: white;
-    box-shadow: rgb(71, 71, 71) 0px 5px 5px;
+    box-shadow: rgba(71, 71, 71, 0.308) 0px 5px 5px;
 }
 nav .logo{
     float: left;
@@ -39,13 +43,13 @@ nav .tools li{
     float: right;
 }
 main{
-    margin-top: 2em;
-    height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    box-sizing: border-box;
+    margin-top: 3em;
+    height: 90%;
 }
 /* 边栏 */
 main aside{
+    z-index: 0;
     float: left;
 }
 main aside *{
@@ -54,26 +58,127 @@ main aside *{
     text-align: center;
 }
 main aside ul{
-    width: 10em;
-    height: 20em;
-    background-color: antiquewhite;  
+    width: 12em;
 }
 main aside li{
     list-style: none;
-    line-height: 3em;
-    background-color: aqua;
-    border-style: solid;
-    border-width: 1px;
+    line-height: 3em;  
+    border-radius: 1em;
+    width: 10em; 
+    transition: margin-left .5s ease-in-out;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+main aside li:hover{
+    background-color: green;
+    margin-left: 2em;
+    
+}
+main aside li:first-child:hover{
+    background-color:white;
+}
+main aside li:hover{
+    background-color: green;
+    margin-left: 2em;
+    
+}
+main aside li:nth-child(2):hover{
+    background-color: #7795AA;
+    margin-left: 2em;
+    
+}
+main aside li:nth-child(3):hover{
+    background-color: #9cc;
+    margin-left: 2em;
+    
+}
+main aside li:nth-child(4):hover{
+    background-color: #f99;
+    margin-left: 2em;
+    
+}
+main aside li:nth-child(5):hover{
+    background-color: #6cc;
+    margin-left: 2em;
+    
+}
+main aside li:nth-child(6):hover{
+    background-color: #6cf;
+    margin-left: 2em;
+    
+}
+main aside li label{
+    cursor: pointer;
+}
+main aside li label:hover{
+    color: white;
+}
+main input{
+    display: none;
 }
 
+main #information:checked~aside ul .information,
+main #collection:checked~aside ul .collection,
+main #like:checked~aside ul .like,
+main #comment:checked~aside ul .comment,
+main #history:checked~aside ul .history
+{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    margin-left: 2em;
+}
+main #information:checked~aside ul .information{
+    background-color: #7795AA;
+}
+main #collection:checked~aside ul .collection{
+    background-color: #9cc;
+}
+main #like:checked~aside ul .like{
+    background-color: #f99;
+}
+main #comment:checked~aside ul .comment{
+    background-color: #6cc;
+}
+main #history:checked~aside ul .history{
+    background-color: #6cf;
+}
+main #information:checked~#userInformation,
+main #collection:checked~#userCollection,
+main #like:checked~#userLike,
+main #comment:checked~#userComment,
+main #history:checked~#userHistory{
+    display: block !important;
+}
+
+
+
+main aside li:first-child{
+    background-color: white;
+}
+main aside li:first-child:hover{
+    margin-left: 1em;
+}
 main aside li img{
     height: 10em;
     width: 10em;
+  
 }
 
 
 main section{
-    margin-left: 10em;
+    margin-left: 12em;
     height: 100%;
-    background-color: aquamarine;
+    display: none;
+}
+
+.copyright{
+    color: rgb(185, 185, 185);
+    margin-top: -1em;
+    text-align: center;
+    line-height: 3em;
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    background-color:white;
 }

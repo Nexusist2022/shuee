@@ -157,23 +157,23 @@ nav .tools li:hover:nth-child(2n+1){
 }
 .websiteData ul{
     padding: 0;
-    margin: 0 0;
+    margin: 0 5%;
     line-height: 15em;
+
 }
 .websiteData li{
     vertical-align: middle;
     height: 10em;
-    width: 33.3%;
+    width: 30%;
     display: inline-block;
     background-color: #bfbfbf;
-    padding: 1em;
     box-sizing: border-box;
     background-clip: content-box;
 }
 
 /* 热门图书 */
 .popularBooks{
-    height: 20em;
+    height: 22em;
     margin: 0 5%;
     
 }
@@ -224,7 +224,7 @@ nav .tools li:hover:nth-child(2n+1){
 }
 
 .popularBooks section{
-    line-height: 17em;
+    line-height: 19em;
     overflow: hidden;
 }
 .popularBooks section *{
@@ -233,16 +233,14 @@ nav .tools li:hover:nth-child(2n+1){
     list-style: none;
 }
 .popularBooks section ul{
+    width: 100%;
     white-space: nowrap;
-    overflow: hidden;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 .popularBooks section li{
     display: inline-block;
-    background-color: #bfbfbf;
-    height: 15em;
+    height: 16em;
     width: 12em;
-    margin-right: 3em;
     /* border-style: solid;
     border-width: 1px; */
     line-height: 15em;
@@ -252,7 +250,6 @@ nav .tools li:hover:nth-child(2n+1){
 
 /* 新书发布 */
 .newBooks{
-    height: 60em;
     margin: 0 5%;
 }
 
@@ -266,18 +263,19 @@ nav .tools li:hover:nth-child(2n+1){
     background-color: #bfbfbf;
     padding: 5em 0;
 }
-.newBooks .partOne img{
+.newBooks .partOne>img{
     position: absolute;
     top: 2em;
     height: 25em;
     width: 18em;
 }
 .newBooks .partOne .bookIntroduction{
-    padding: 0;
+    padding: 0 2em;
     margin: 0;
     margin-left: 18em;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+   
 }
 .newBooks .partOne .bookIntroduction li{
     list-style: none;
@@ -286,36 +284,6 @@ nav .tools li:hover:nth-child(2n+1){
 }
 
 /* 新书发布 分区二*/
-.newBooks .partTwo{
-    height: 30em;
-}
-.newBooks .partTwo li{
-    list-style: none;
-}
-.newBooks .partTwo .bookIntroduction{
-    float: left;
-    padding: 0;
-    margin: 0;
-    width: 40%;
-    height: 30em;
-    background-color: #bfbfbf;
-}
-.newBooks .partTwo .book ul{
-    width: 60%;
-    margin: 0;
-    padding: 0;
-    height: 30em;
-    float: right;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.newBooks .partTwo .book li{
-    float: right;
-    width: 15em;
-    height: 100%;
-    margin-left: 3em;
-    background-color: #bfbfbf;
-}
 
 /* 装饰背景图 */
 .backgroundImg{
@@ -403,8 +371,7 @@ nav .tools li:hover:nth-child(2n+1){
 .popularAuthor section li{
     list-style: none;
     height:10em;
-    width: 8em;
-    background-color: #bfbfbf;
+    width: 9em;
     display: inline-block;
     line-height: 10em;
     vertical-align: middle;

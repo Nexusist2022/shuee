@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="personalInfo.css">
+    <link rel="stylesheet" href="personalCollection.css">
+    <link rel="stylesheet" href="personalComment.css">
+    <link rel="stylesheet" href="personalHistory.css">
+    <link rel="stylesheet" href="personalLike.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -20,21 +27,473 @@
         </ul>
     </nav>
     <main>
+        <input type="radio" name="tab" id="information">
+        <input type="radio" name="tab" id="collection">
+        <input type="radio" name="tab" id="like">
+        <input type="radio" name="tab" id="comment" checked>
+        <input type="radio" name="tab" id="history">
         <aside>
             <ul>
-                <li><img src="" alt=""></li>
-                <li>我的信息</li>
-                <li>我的收藏</li>
-                <li>我的点赞</li>
-                <li>我的评论</li>
-                <li>浏览历史</li>
+                <li><img src="../resource/img/user_info/user_pic.png" alt=""></li>
+                <li class="information"><label for="information">我的信息</label></li>
+                <li class="collection"><label for="collection">我的收藏</label></li>
+                <li class="like"><label for="like">我的点赞</label></li>
+                <li class="comment"><label for="comment">我的评论</label></li>
+                <li class="history"><label for="history">浏览历史</label></li>
             </ul>
         </aside>
-        <section>
+        <section id="userInformation">
+            <header>
+                <h1>Nesuxist | Nesuxist</h1>
+            </header>
+            <article>
+                <p>邮箱<br><u>781327871@qq.com</u></p>
+                <p>手机号<br><u>18775553464</u></p>
+                <p>出生日期<br><u>2000-2-2</u></p>
+                <p>喜好<br><u>文艺|悬疑|科幻</u></p>
+                <p><u>“阅读的最大理由是想摆脱平庸，早一天就多一份人生的精彩，迟一天就多一天平庸的困扰。”</u></p>
+            </article>
+        </section>
+        <section id="userCollection">
             <header></header>
+            <article>
+                <ul>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+        </section>
+        <section id="userLike">
+            <header></header>
+            <article>
+                <ul>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../resource/img/bookCover/白鹿原.jpg" alt="">
+                        <div>
+                            <h4>白鹿原</h4>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星半.svg" alt="">
+                            <img src="../resource/img/index/星星空.svg" alt="">
+                            <br>
+                            <div>
+                                <img src="../resource/img/index/浏览量 (1).svg" alt=""> (222)
+                                <img src="../resource/img/index/点赞量.svg" alt=""> (222)
+                                <img src="../resource/img/index/评论量.svg" alt=""> (222)
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </article>
+        </section>
+        <section id="userComment">
+            <header></header>
+            <article>
+                <ul>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                    <li>
+                        <header>
+                            <span>《xxx》</span>
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <img src="../resource/img/index/星星满.svg" alt="">
+                            <span>2022-2-1 14:00:00</span>
+                        </header>
+                        <article>
+                            <p>人生的道路虽然漫长，但紧要处常常只有几步。《人生》是路遥的成名之作，由吴天明执导的同名电影，轰动全国，2018年获评“改革开放40周年中国十大优秀爱情电影”。
+                                它以改革时期陕北高原的城乡生活为时空背景，叙述了农村青年高加林回到土地、离开土地、复又回去的曲折人生历程。在城乡间辗转，他既选择过努力与坚持，也选择过放弃与告别，与农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛剪不乱、理还乱。</p>
+                        </article>
+                        <footer>
+                            <span>展开</span> |
+                            <span>编辑</span> |
+                            <span>删除 </span>
+                        </footer>
+
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="userHistory">
+            <header>浏览历史</header>
             <article></article>
         </section>
     </main>
-    <footer></footer>
+    <footer class="copyright">2022 ALL Rights Reserved By © Book Library</footer>
 </body>
+
 </html>

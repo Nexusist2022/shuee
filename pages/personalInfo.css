@@ -1,0 +1,47 @@
+#userInformation{
+    color: white;
+    text-align: center;
+    background-color: #7795AA;
+}
+#userInformation header h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 2em;
+}
+#userInformation header{
+    font-size: 2em;
+    font-weight: lighter;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    margin: 0 5em;
+    overflow: hidden;
+    animation: show_one 3s ease-out 0s;
+    white-space: nowrap;
+}
+#userInformation article p{
+    line-height: 1.5em;
+    vertical-align: middle;
+    animation: show_two 4s ease-out 0s;
+    white-space: nowrap;
+    
+}
+
+@keyframes show_one {
+    from{
+        margin: 0 20em;
+    }
+    to{
+        margin: 0 5em;
+    }
+}
+
+
+@keyframes show_two {
+    from{
+       color: rgba(255, 255, 255, 0);
+       margin-top: 10em;
+    }
+    to{
+        color: rgba(255, 255, 255, 1);
+    }
+}

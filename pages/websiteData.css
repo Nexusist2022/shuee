@@ -1,0 +1,19 @@
+
+.websiteData ul{
+    white-space: nowrap;
+    text-align-last: justify;
+}
+.websiteData ul li{
+    text-align-last:center;
+    text-align: center;
+    line-height: 2em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 1em;
+}
+
+.websiteData ul li img{
+    margin-top: 1em;
+    vertical-align: top;
+}

@@ -1,0 +1,120 @@
+.newBooks button{
+    width: 8em;
+    height: 3em;
+    border-radius: 1.5em;
+    border-width: 0;
+    font-weight:bolder;
+    color: white;
+    background-color: teal;
+    box-shadow: 1px 5px 5px rgb(2, 95, 95);
+    transition: all 1s ease;
+    text-align-last: center;
+}
+.newBooks button:hover{
+    width: 8.1em;
+    height: 3.1em;
+    border-radius: 1.75em;
+    box-shadow: 3px 8px 5px rgb(2, 95, 95);
+}
+.newBooks .partOne{
+    overflow:hidden;
+    color: white;
+}
+.newBooks .bookIntroduction li:last-child{
+    text-align: end;
+}
+.newBooks .bookIntroduction li:nth-child(2){
+    line-height: 1.5em;
+ }
+ .newBooks .bookIntroduction li:nth-child(3){
+    line-height: 1.5em;
+ }
+.newBooks .bookIntroduction li:nth-last-child(3){
+   line-height: 1.5em;
+   display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.newBooks .bookIntroduction li:nth-last-child(2){
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    line-height: 1.5em;
+ }
+ .newBooks .bookIntroduction li:nth-last-child(2) img{
+    vertical-align: middle;
+ }
+ .newBooks .bookIntroduction li:nth-last-child(1){
+    margin-top: .2em;
+ }
+.newBooks h1{
+    font-size: 2.5em;
+}
+
+
+.newBooks .partTwo {
+    text-align-last: justify;
+}
+.newBooks .partTwo .bookIntroduction{
+    text-align-last: left;
+    display: inline-block;
+    width: 25em;
+    height: 21em;
+    vertical-align: top;
+}
+.newBooks .partTwo .bookIntroduction article{
+    text-indent: 2em;
+    text-align: justify;
+    
+}
+.newBooks .partTwo .bookIntroduction header h3{
+    border-style: solid;
+    border-width: 0 0 1px 0;
+
+}
+.newBooks .partTwo .bookIntroduction footer{
+    text-align-last: right;
+}
+.newBooks .partTwo .book{
+    display: inline-block;
+}
+.newBooks .partTwo .book>ul{
+    margin: 0;
+    padding: 0;
+  
+}
+.newBooks .partTwo .book li{
+    vertical-align: top;
+    display: inline-block;
+    height: 19.5em;
+    width: 15em;
+    text-align-last: left;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.newBooks .partTwo .book li:hover{
+    height: 21em;
+    cursor: pointer;
+}
+.newBooks .partTwo .book li>img:first-child{
+    box-sizing: border-box;
+    width: 10em;    
+}
+.newBooks .partTwo .book li>h4{
+    margin: 0;
+    font-weight: lighter;
+}
+.newBooks .partTwo .book li>p{
+    font-weight: lighter;
+    font-size: smaller;
+    color: rgb(126, 124, 124);
+    text-align-last: left;
+    margin: 0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    width: 10em;
+}
+
+.newBooks .partTwo .book ul li div img{
+    vertical-align: middle;
+}
